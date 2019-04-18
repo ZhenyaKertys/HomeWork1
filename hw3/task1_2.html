@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var cost = parseInt(prompt('Введіть ціну товару'))
+        var money = parseInt(prompt('Введіть кількість'))
+        var rest = money - cost
+
+        if (cost <= money)
+            document.write('Дякую за покупку!!!')
+
+        if (rest > 4)
+            document.write(`Ваша решта ${rest} грн. Бажаєте купити лотерею за 4 грн???`)
+
+        else
+            document.write('Не достатньо коштів')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
