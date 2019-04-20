@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var department = parseInt(prompt(`1.Відділ побутової техніки\n2.Відділ інструментів`))
+        if (department <= 1) {
+            let house = parseInt(prompt(`<Побутова техніка>\n1.телевізон\n2.праска\n3.планшет`))
+            switch (house) {
+                case 1: document.write('Телевізор')
+                    break;
+                case 2: document.write('Праска')
+                    break;
+                case 3: document.write('Планшет')
+                    break;
+                default: alert('ERROR')
+                    break
+            }
+        }
+        else {
+            let tools = parseInt(prompt(`<Інструменти>\n1.Лопата\n2.Граблі\n3.Мітла\n4.Пила`))
+            switch (tools) {
+                case 1: document.write('Лопата')
+                    break;
+                case 2: document.write('Граблі')
+                    break;
+                case 3: document.write('Мітла')
+                    break;
+                case 4: document.write('Пила')
+                    break;
+                default: alert('ERROR')
+                    break
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

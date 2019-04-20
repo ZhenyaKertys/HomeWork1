@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+//         var number1 = parseInt(prompt('Введіть перше число'))
+//         var number2 = parseInt(prompt('Введіть друге число'))
+//         var dod = 1
+//         var mno = 2
+//         var vid = 3
+//         var dil = 4
+//         var action = parseInt(prompt(`Введіть номер дії\n1. Додавання\n2. Множення\n3. Віднімання\n 4. Діленяя `))
+//         if (action == dod) 
+//         {
+//             var result = number1 + number2
+//             document.write(`Результат операції ${result}`)
+//         }
+//         else
+//         {
+//             if(action == mno)
+//             {
+//             result = number1 * number2
+//             document.write(`Результат операції ${result}`)
+//         }
+//         else
+//         {
+//             if(action == vid)
+//             {
+//             result = number1 - number2
+//             document.write(`Результат операції ${result}`)
+//         }
+//         else
+//         {
+// if(action == dil)
+// {
+//     result = number1 / number2
+//     document.write(`Результат операції ${result}`)
+// }
+// else
+// document.write('ERROR')
+//         }
+//         }
+//         }
+
+    </script>
+    <script>
+        //коротший варіант
+        var number1 = parseInt(prompt('Введіть перше число'))
+        var number2 = parseInt(prompt('Введіть друге число'))
+        var action = parseInt(prompt(`Введіть номер дії\n1. Додавання\n2. Множення\n3. Віднімання\n 4. Діленяя `))
+        switch(action)
+        {
+            case 1 : document.write(`Результат ${number1 + number2}`)
+            break;
+            case 2 : document.write(`Результат ${number1 * number2}`)
+            break;
+            case 3 : document.write(`Результат ${number1 - number2}`)
+            break;
+            case 4 : document.write(`Результат ${number1 / number2}`)
+            break;
+            default : alert('ERROR')
+            break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
