@@ -16,14 +16,17 @@
         if (red > red2 && lis > lis2 && bil > bil2) 
 
             document.write('В одної дитини кожного типу цукерок більше')
-            {
-                if (red > red2 && lis > lis2 && bil < bil2)
+            
+               else{ if (red > red2 && lis > lis2 && bil < bil2)
                     document.write('В одної дитини два типа цукерок більше')
-            }
-            {
-                if (red == red2 && lis == lis2 && bil == bil2)
+            
+            
+               else{ if(red == red2 && lis == lis2 && bil == bil2)
                     document.write('Кількість цукерок одинакова')
-            }
+                    else alert('ERROR')
+                }
+               }
+            
         
     </script>
 </head>
