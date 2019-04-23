@@ -10,22 +10,28 @@
       var age = parseInt(prompt('Введіть вік'))
       if(age>=1&&age<=6)  
       document.write('Дитина в садочку')
+      else
       {
           if(age>=7&&age<=14)
           document.write('Учень')
-      }
+      else
       {
         if(age>=15&&age<=22)
           document.write('Студент')
-      }
+      else
       {
         if(age>=23&&age<=64)
           document.write('Працівник')
-      }
+      else
       {
         if(age>=65&&age<=100)
           document.write('Пенсіонер')
+          else
+          alert('Error')
       }
+    }
+  }
+}
     </script>
 </head>
 

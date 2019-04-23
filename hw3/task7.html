@@ -7,12 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        //??????
         var hour = parseInt(prompt('Введіть години'))
         var min = parseInt(prompt('Введіть хвилини'))
-        if (hour = 8 && min >= 30) (hour = 9 && min <= 15)
+        if ((hour == 8 && min >= 30) || (hour == 9 && min <= 15))
         document.write('Перший урок')
-        
+     else if ((hour == 9 && min >= 25) || (hour == 10 && min <= 10))
+        document.write('Другий урок')
+     else if ((hour == 10 && min >= 20) || (hour == 11 && min <= 55))
+        document.write('Третій урок')
+     
+     
     </script>
 </head>
 

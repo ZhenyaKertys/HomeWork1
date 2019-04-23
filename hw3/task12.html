@@ -8,10 +8,44 @@
     <title>Document</title>
     <script>
         //не готово
-        var choice = parseInt(prompt(`Виберіть вашу дію\n1.Камінь\n2.Ножниці\n3.Бумага`))
+        var userChoice = parseInt(prompt(`Виберіть вашу дію\n1.Камінь\n2.Ножниці\n3.Бумага`))
         var copmChoice = 1 + Math.floor(Math.random() * 3)
-        if(choice==copmChoice)
-        document.write()
+        var result;
+        switch(userChoice){
+            case 1 :
+            switch(copmChoice){
+                case 1 : result = "Щераз"
+                break;
+                case 2 : result = "Виіграш"
+                break;
+                case 3 : result = "Проіграш"
+                break;
+            }
+            break;
+            case 2 :
+            switch(copmChoice){
+                case 1 : result = "Проіграш"
+                break;
+                case 2 : result = "Щераз"
+                break;
+                case 3 : result = "Виіграш"
+                break;
+            }
+            break;
+            case 3 :
+            switch(copmChoice){
+                case 1 : result = "Виіграш"
+                break;
+                case 2 : result = "Проіграш"
+                break;
+                case 3 : result = "Щераз"
+                break;
+            }
+            break;
+            default: alert('ERROR')
+        }
+        alert(result)
+        
     </script>
 </head>
 
