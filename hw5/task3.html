@@ -18,36 +18,64 @@
         // if (userCell == compCell)
         //     document.write('You Win!!!')
         // else {
+        // var userCell = parseInt(prompt('You lose!! Try againe!'))
+        // if (userCell == compCell)
+        //     document.write('You Win!!!')
+        // else
+        //     document.write('Loser!')
+        // }
+        //-----------------------------------------------------------------
+        // якщо корабель знаходиться у сусідньому по відношенню до квадрата, де знаходиться корабель, то корабель пошкоджено(про це повідомляємо користувача).
+        //???? не получається
+        // var cellNumber = parseInt(prompt('Введіть число кліток'))
+        // var compCell = 1 + Math.floor(Math.random() * cellNumber)
+        // var userCell = parseInt(prompt('Введіть номер клітинки куди стріляти!'))
+        // if (userCell == compCell)
+        //     document.write('Перемога')
+        // else {
+        //     if (userCell == compCell - 1 || userCell == compCell + 1)
+        //         var userCell = parseInt(prompt('Корабель пошкодженно! Стріляйте щераз!'))
+        //     else {
+        //         if (userCell == compCell)
+        //             document.write('Перемога')
+        //         else {
+        //             var userCell = parseInt(prompt('Ви промазали! Стріляйте щераз!'))
+        //             if (userCell == compCell)
+        //                 document.write('Перемога')
+        //                 else
+        //                 document.write('Lose')
+        //         }
+
+        //     }
+        // }
+        // Задача 3.1.Модифікувати попередню задачу з можливістю після пострілу переміщення корабля у випадковим чином вибрану сусідню клітинку(якщо звичайно корабель не було потоплено за першим разом).
+        // var cellNumber = parseInt(prompt('Введіть число кліток'))
+        // var compCell = 1 + Math.floor(Math.random() * cellNumber)
+        // var userCell = parseInt(prompt('Введіть номер клітинки куди стріляти!'))
+        // if (userCell == compCell)
+        //     document.write('You Win!!!')
+        // else {
+        //     var compCell = 1 + Math.floor(Math.random() * cellNumber)
         //     var userCell = parseInt(prompt('You lose!! Try againe!'))
         //     if (userCell == compCell)
         //         document.write('You Win!!!')
         //     else
         //         document.write('Loser!')
         // }
-        //-----------------------------------------------------------------
-        // якщо корабель знаходиться у сусідньому по відношенню до квадрата, де знаходиться корабель, то корабель пошкоджено(про це повідомляємо користувача).
-//????
-        var cellNumber = parseInt(prompt('Введіть число кліток'))
-        var compCell = 1 + Math.floor(Math.random() * cellNumber)
-        var userCell = parseInt(prompt('Введіть номер клітинки куди стріляти!'))
-        if (userCell == compCell)
-            document.write('Перемога')
-        else {
-            if (userCell == compCell - 1 || userCell == compCell + 1)
-                var userCell = parseInt(prompt('Корабель пошкодженно! Стріляйте щераз!'))
-            else {
-                if (userCell == compCell)
-                    document.write('Перемога')
-                else {
-                    var userCell = parseInt(prompt('Ви промазали! Стріляйте щераз!'))
-                    if (userCell == compCell)
-                        document.write('Перемога')
-                        else
-                        document.write('Lose')
-                }
-
-            }
-        }
+        // Задача 3.2. Модифікувати попередню задачу таким чином, що кораблем керує користувач, а комп’ютер стріляє. 
+        // var cellNumber = parseInt(prompt('Введіть число кліток'))
+        // var userCell = parseInt(prompt('Введіть номер клітинки куди ставити корабель'))
+        // var compCell = 1 + Math.floor(Math.random() * cellNumber)
+        // if (userCell == compCell)
+        //     document.write('You lose! Comp win!')
+        // else {
+        //     var userCell = parseInt(prompt('Компютер не попав! Введіть щераз номер клітинки куди ставити корабель'))
+        //     var compCell = 1 + Math.floor(Math.random() * cellNumber)
+        //     if (userCell == compCell) 
+        //             document.write('You lose! Comp win!')
+        //         else
+        //             document.write('You Wіn')
+        // }
     </script>
 </head>
 
