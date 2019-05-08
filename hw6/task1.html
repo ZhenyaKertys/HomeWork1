@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // Задача. Визначити чи є рік високосним
+        /// <summary>
+        /// Функція, для визначення високосного року
+        /// </summary>
+        /// <param name="year">Рік</param>     
+        // function LeapYear(year) {
+        //     var resul;
+        //     if(year%4==0)
+        //     result= 'Високосний рік!'
+        //     else
+        //     result= 'Не високосний рік!'
+        //     return result
+        // }
+        // var year = parseInt(prompt('Введіть рік'))
+        // alert(LeapYear(year))
+        //=========================================
+        // Задача. Знайти розмір заробітної плати (ставка + надбавка (25%) - податок (20%))
+        /// <summary>
+        /// Функція, для визначення заробітньої плати
+        /// </summary>
+        /// <param name="stavka">заробі плата за день</param>
+        /// <param name="workDays">Кількість робочих днів</param> 
+        // function whatIsTheSalary(stavka, workDays) {
+        //     var result;
+        //     var salary = stavka*workDays
+        //     var premium = salary*0.25
+        //     var podatok = salary*0.2
+        //     result = salary+premium-podatok
+        //     return result
+        // }
+        // var stavka = parseInt(prompt('Введіть вашу ставку'))
+        // var workDays = parseInt(prompt('ВВедіть кількість робочих днів'))
+        // alert(whatIsTheSalary(stavka, workDays))
+        //============================================
+        // Задача. Дано назву та ціни 4 товарів. Вивести назви товарів, ціна яких не перевищує 1000грн.
+        // function chiperThen1000(name, price) {
+        //     var result
+        //     if (price < 1000)
+        //         document.write(`${name} дешевше тисячі`)
+        //     else
+        //         document.write(`${name} дорожче тисячі`)
+        // }
+        // for (let i = 1; i <= 4; i++) {
+        //     var name = prompt('Введіть імя товара')
+        //     var price = parseInt(prompt('Введіть ціну товара'))
+        //     chiperThen1000(name, price)
+        //     document.write('<br>')
+        // }
+        //=================================================
+        var name1 = prompt('Введіть назву першого товару')
+        var price1 = parseInt(prompt('Введіть ціну першого товару'))
+        var name2 = prompt('Введіть назву другого товару')
+        var price2 = parseInt(prompt('Введіть ціну другого товару'))
+        var name3 = prompt('Введіть назву третього товару')
+        var price3 = parseInt(prompt('Введіть ціну третього товару'))
+        var name4 = prompt('Введіть назву четвертого товару')
+        var price4 = parseInt(prompt('Введіть ціну четвертого товару'))
+
+        function whatIsChiper(name, price) {
+            if (price < 1000)
+                document.write(`${name} дешевше тисячі<br>`)
+            else
+                document.write(`${name} дорожче тисячі<br>`)
+        }
+        function chiperThan1000(name1, price1, name2, price2, name3, price3, name4, price4) {
+            whatIsChiper(name1, price1)
+            whatIsChiper(name2, price2)
+            whatIsChiper(name3, price3)
+            whatIsChiper(name4, price4)
+        }
+        chiperThan1000(name1, price1, name2, price2, name3, price3, name4, price4)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
