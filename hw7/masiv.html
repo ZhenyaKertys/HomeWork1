@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 1. Дано масив, який містить оцінки з К предметів.Знайти середній бал і з’ясувати до якої категорії він відноситься(відмінник, 
+        // двійочник(має хоча би одну двійку), хорошист(оцінки добре і відмінно), трійочник(є хоча би одна трійка)).
+        // let subjectsCount = parseInt(prompt('Введіть кількість предметів'))
+        // let subjects = []
+        // for (let i = 0; i < subjectsCount; i++) {
+        //     var el = parseInt(prompt(`Введіть оцінку з ${i+1} предмету по 5 балній системі`))
+        //     subjects.push(el)
+        // }
+        // function averageScore(subjects) {
+        // let suma = 0
+        // for (let i = 0; i < subjects.length; i++) {
+        //     suma+=subjects[i] 
+
+        // }
+        // return suma/subjects.length
+        // }
+        // function scoreTwo(score) {
+        //    return score==2
+        // }
+        // function scoreThree(score){
+        //     return score==3
+        // }
+        // function scoreGood(score) {
+        //     return score>=4
+        // }
+
+        // if(subjects.some(scoreTwo)==true)
+        // document.write('Двійочник')
+        // else if(subjects.some(scoreThree)==true)
+        // document.write('Трійочник')
+        // else if(subjects.some(scoreGood)==true)
+        // document.write('Хорошист')
+        // document.write('<br>')
+        // document.write(`Середній бал ${averageScore(subjects)}`)
+        //====================================================================
+        // 2. Дано масив, який зберігає кількість відвідувачів магазину протягом тижня.Вивести на екран:
+        // •	номери днів, протягом яких кількість відвідувачів була меншою за 20;
+        // •	номери днів, коли кількість відвідувачів була мінімальною;
+        // •	номери днів, коли кількість відвідувачів була максимальною;
+        // •	загальну кількість клієнтів у робочі дні та окремо загальну кількість днів на вихідних.
+
+
+    //     let visiters = []
+    //     for (let i = 0; i < 7; i++) {
+    //         let el = parseInt(prompt(`Введіть кількість відвідувачів в ${i+1} день`))
+    //         visiters.push(el)
+    //     }
+    //    let sB = 0
+    //    for (let i = 0; i <= 4; i++) {
+    //        sB+=visiters[i]
+    //    }
+    //    let sW = 0
+    //    for (let i = 5; i < visiters.length; i++) {
+    //        sW+=visiters[i]
+    //    }
+    //    alert(`
+    //    Загальна кількість відвідувачів у будні ${sB} людей\n
+    //    Загальна кількість відвідувачів у вихідні ${sW} людей`)
+    //    function MaxDays(visiters) {
+    //    let max = Math.max(...visiters)
+    //    return visiters.indexOf(max)
+    //    }
+    //    let max = MaxDays(visiters)
+    //    alert(`Найбільша кількість відвідувачів була в ${max+1} день`)
+
+    //    function MinDays(visiters) {
+    //    let min = Math.min(...visiters)
+    //    return visiters.indexOf(min)
+    //    }
+    //    let min = MinDays(visiters)
+    //    alert(`Найменьша кількість відвідувачів була в ${min+1} день`)
+    //    function lowerThen20(visiters) {
+    //        let arr = []
+    //        for (let i = 0; i < 7; i++) {
+    //            if(visiters[i]<=20){
+    //            arr.push(i+1)
+    //         }
+    //        }
+    //        return arr
+    //    }
+    //    let lowThen20 = lowerThen20(visiters)
+    //    alert(`Найменша кількічть відівідувачів була в ${lowThen20} день`)
+
+
+       //================================================================
+    //    3. Дано масив імен учнів. З’ясувати скільки разів зустрічається ім’я «Іван».
+    let studentsCount = parseInt(prompt('Введіть кліькість учнів'))
+    
+    let studentName = []
+    for (let i = 0; i < studentsCount; i++) {
+        let el = prompt('Введіть імена учнів')
+       studentName.push(el) 
+    }
+    function countIvan(studentName) {
+        let ivan = 0
+        for (let i = 0; i < studentsCount.length; i++) {
+            if(studentName[i] === 'Іван')
+            ivan++ 
+        }
+        return ivan
+    }
+    let ivan = countIvan(studentName)
+    document.write(ivan)
+
+    //===================================================================
+    // 4. Дано одновимірний масив, у якому зберігається певна виграшна сума (елементи заповнюються випадковим чином значеннями від -500 до 500).
+    //  Надаючи користувачу можливість вибирати номери елементів  (поки він не відмовиться). Знаходити сумарний виграш.
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

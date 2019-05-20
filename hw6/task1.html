@@ -43,7 +43,6 @@
         //============================================
         // Задача. Дано назву та ціни 4 товарів. Вивести назви товарів, ціна яких не перевищує 1000грн.
         // function chiperThen1000(name, price) {
-        //     var result
         //     if (price < 1000)
         //         document.write(`${name} дешевше тисячі`)
         //     else
@@ -56,29 +55,32 @@
         //     document.write('<br>')
         // }
         //=================================================
-        var name1 = prompt('Введіть назву першого товару')
-        var price1 = parseInt(prompt('Введіть ціну першого товару'))
-        var name2 = prompt('Введіть назву другого товару')
-        var price2 = parseInt(prompt('Введіть ціну другого товару'))
-        var name3 = prompt('Введіть назву третього товару')
-        var price3 = parseInt(prompt('Введіть ціну третього товару'))
-        var name4 = prompt('Введіть назву четвертого товару')
-        var price4 = parseInt(prompt('Введіть ціну четвертого товару'))
-
-        function whatIsChiper(name, price) {
-            if (price < 1000)
-                document.write(`${name} дешевше тисячі<br>`)
-            else
-                document.write(`${name} дорожче тисячі<br>`)
+        // Задача. Дано вік 5 працівників. Визначити скільки серед них є пенсіонерів.
+        // function isHeAPensioner(age) {
+        //     if(age>=65)
+        //     return true
+        // }
+        // var a = 0
+        // for (let i = 1; i <= 5; i++) {
+        //     var age = parseInt(prompt('Введіть вік'))
+        //     var res = isHeAPensioner(age)
+        //     if(res==true)
+        //     a++
+        // }
+        // document.write(`${a} пенсіонери`)
+        //=====================================================
+        // Задача. Дано ціни 4 товарів. Визначити, скільки кожного виду товарів може купити користувач за наявну у нього кількість грошей.
+        function howManyGoods(price, money) {
+            return Math.floor(money / price1)
         }
-        function chiperThan1000(name1, price1, name2, price2, name3, price3, name4, price4) {
-            whatIsChiper(name1, price1)
-            whatIsChiper(name2, price2)
-            whatIsChiper(name3, price3)
-            whatIsChiper(name4, price4)
-        }
-        chiperThan1000(name1, price1, name2, price2, name3, price3, name4, price4)
-
+        var price1 = parseInt(prompt('Введіть ціну товара'))
+        var price2 = parseInt(prompt('Введіть ціну товара'))
+        var price3 = parseInt(prompt('Введіть ціну товара'))
+        var price4 = parseInt(prompt('Введіть ціну товара'))
+        var money = parseInt(prompt('Введіть кількість грошей'))
+        document.write(howManyGoods(price1,money))
+        
+        
 
     </script>
 </head>
