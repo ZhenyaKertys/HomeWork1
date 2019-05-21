@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // Задача. Кожне парне число збільшити на 5. 
+
+        // let arr =[1,2,3,4,5,6]
+        // function evenUpTo5(el,i,arr) {
+        //     if(arr[i]%2==0)
+        //    arr[i]+=5 
+        // }
+        // arr.forEach(evenUpTo5)
+        // document.write(arr)
+        //============================================
+        //Задача. Дано масив чисел. Сформувати новий масив, у якому усі числа збільшено на 20.
+
+        // let arr = [1,2,3,4,5,6]
+        // function upTo20(el,i,arr) {
+        //     return el+20
+        // }
+        // let arrUp = arr.map(upTo20)
+        // document.write(arrUp)
+        //============================================
+        // Задача. Дано масив показників термометра протягом місяця. З’ясувати, чи є серед них дні, коли температура була меншою за 5 градусів.
+        // let degreec = [20,4,15,3,10]
+        // if(degreec.some((el)=>el=>5))
+        // document.write('Є дні з температурою нижче 5')
+        // else
+        // document.write('Немає днів з температурою нижче 5')
+        //===========================================
+        // Задача. Дано масив показників термометра протягом місяця. З’ясувати, чи усі показники є більшими за 10 градусів.
+        // let degreec = [12,5,15,9,20]
+        // function bigerThen10(el) {
+        //     return el>10
+        // }
+        // if(degreec.every(bigerThen10))
+        // document.write('Всі показники більше 10')
+        // else
+        // document.write('Не всі показники більше 10')
+        //=======================================================
+        // Задача. Знайти суму від’ємних елементів масиву.
+
+        // let arr=[-2,3,4,-5,-10]
+        // document.write(arr.reduce((result, el)=>el<0?result+el:result, 0))
+        //=========================================================
+        // Задача. Створити функцію, яка б могла знаходити суму для довільної кількості переданих чисел
+
+        // function suma(result, el,i,arr) {
+        //     return result += el
+        // }
+        // function addition(lenght) {
+        //     let arr = []
+        //     for (let i = 0; i < countNumber; i++) {
+        //         let el = parseInt(prompt('Введіть довільні числа'))
+        //         arr.push(el)
+        //     }
+        //     return arr
+        // }
+        // let countNumber = parseInt(prompt('Введіть кількість чисел'))
+        // let arr = addition(countNumber)
+        // document.write(arr.reduce(suma))
+        //=================================================================
+        // Задача. Знайти або суму, або добуток чисел.
+        // let arr = [2,3,4,5,6,7]
+        // let choice = parseInt(prompt(`1.Добуток\n2.Сума`))
+        // let result
+        // switch(choice){
+        //     case 1 : result=arr.reduce((result,el,i,arr)=>result*=el)
+        //     break;
+        //     case 2 : result=arr.reduce((result,el,i,arr)=>result+=el)
+        //     break;
+        //     default: result = 'ERROR'
+        // }
+        // document.write(`Результат ${result}`)
+        //===============================================================
+        // Задача.Дано масив цілих чисел.Вибрати одну із дій при перегляді елементів.
+        // Якщо елемент більше за заданий то:
+        // 1) помножити на 2;
+        // 2) поділити на 7;
+        // Якщо елемент менше рівне за заданий то:
+        // 1) помножити на 3;
+        // 2) помножити на 5.
+        // let arr = [2, 15, 6, 10]
+        // function bigerOrLess(x, i, arr) {
+        //     let el = parseInt(prompt(`Введіть число елемента для порівняння `))
+        //     if (el > x) {
+        //         let choice = parseInt(prompt(`1.Помножити на 2\n2.Поділити на 7`))
+        //         switch (choice) {
+        //             case 1: arr[i] *= 2
+        //                 break;
+        //             case 2: arr[i] /= 7
+        //                 break;
+        //         }
+        //     }
+        //     else if (el <= x) {
+        //         let choice = parseInt(prompt(`1.Помножити на 3\n2.Помножити на 5`))
+        //         switch (choice) {
+        //             case 1: arr[i] *= 3
+        //                 break;
+        //             case 2: arr[i] *= 5
+        //                 break;
+        //         }
+        //     }
+        // }
+        // arr.forEach(bigerOrLess)
+        // document.write(arr)
+        //=========================================================
+        // Задача 1. Дано одновимірний масив.Кожен елемент
+        // 1) піднести до квадрату;
+        // 2) помножити на 7;
+        // 3) поділити на 10.
+        // Використати функції.
+        let arr = [10,20,30,40,50]
+        function choiceWhatToDo(x,i,arr) {
+        switch(choice){
+            case 1 : arr[i]=x*x
+            break;
+            case 2 : arr[i]*=7
+            break;
+            case 3 : arr[i]/=10
+            break;
+        }
+        }
+        let choice  =parseInt(prompt(`Виберіть дію\n1.Піднести до квадрату\n2.Помножити на 7\n3.Подлілити на 10`))
+        arr.forEach(choiceWhatToDo)
+        document.write(arr)
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

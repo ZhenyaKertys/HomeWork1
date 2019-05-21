@@ -93,23 +93,30 @@
 
        //================================================================
     //    3. Дано масив імен учнів. З’ясувати скільки разів зустрічається ім’я «Іван».
-    let studentsCount = parseInt(prompt('Введіть кліькість учнів'))
     
-    let studentName = []
-    for (let i = 0; i < studentsCount; i++) {
-        let el = prompt('Введіть імена учнів')
-       studentName.push(el) 
-    }
-    function countIvan(studentName) {
-        let ivan = 0
-        for (let i = 0; i < studentsCount.length; i++) {
-            if(studentName[i] === 'Іван')
-            ivan++ 
-        }
-        return ivan
-    }
-    let ivan = countIvan(studentName)
-    document.write(ivan)
+    
+    // function inputArray(lenght) {
+    //     let arr = []
+    // for (let i = 0; i < studentCount; i++) {
+    //     let el = prompt('Введіть імена учнів')
+    //    arr.push(el) 
+    // }
+    // return arr
+    // }
+    // //-------------
+    // function countIvan(studentName) {
+    //     let ivansCount = 0
+    //     for (let i = 0; i < studentName.length; i++) {
+    //         if(studentName[i] === 'Іван')
+    //         ivansCount++ 
+    //     }
+        
+    //     return ivansCount
+    // }
+    // let studentCount = parseInt(prompt('Введіть кліькість учнів'))
+    // studentName = inputArray(studentCount)
+    // let ivan = countIvan(studentName)
+    // document.write(ivan)
 
     //===================================================================
     // 4. Дано одновимірний масив, у якому зберігається певна виграшна сума (елементи заповнюються випадковим чином значеннями від -500 до 500).
