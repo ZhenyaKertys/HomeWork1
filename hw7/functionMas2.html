@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // Задача 1. Дано масив цілих чисел. Кожне від’ємне число замінити на 0
+
+        // let arr = [-1,2,-3,4,-5]
+        // function changeToZero(x,i,arr) {
+        //     if(x<0)
+        //     arr[i]=0
+        // }
+        // arr.forEach(changeToZero)
+        // document.write(arr)
+        //-===================================================
+        // Задача 2. Дано масив цін. Сформувати новий масив, який містить тільки ті ціни, які менші за задану.?????????
+
+        // let priceCount = [50, 100, 65, 55, 79, 45]
+        // function lessThen(x, i, arr) {
+        //     if (x < givenPrice)
+        //         return x
+        // }
+        // let givenPrice = parseInt(prompt('Введіть ціну'))
+        // let newPrice = priceCount.map(lessThen)
+        // document.write(newPrice)
+        //==============================================================
+        // Задача 3. Дано масив цін товарів. Для цін, які менші за 1000грн. додати 20% ціни, для тих, які більші за 1000 грн. відняти 30%.
+
+        // let priceCount = [500, 1020,800,1211]
+        // function moreOrLess(x,i,arr) {
+        //     if(x<1000)
+        //     arr[i]+=x*0.2
+        //     else if(x>1000)
+        //     arr[i]-=x*0.3
+        // }
+        // priceCount.forEach(moreOrLess)
+        // document.write(priceCount)
+        //=======================================================
+        // Задача 4. Дано масив імен. Сформувати новий масив, який складається з імен, які починаються на задану літеру.
+
+        // let nameCount = ['Іван', 'Інна', 'Петя', 'Саша']
+        // function firstLetter(x,i,arr) {
+        //     if(firstLetterOf==x.charAt(0).toLowerCase())
+        //     return arr[i]
+        // }
+        // let firstLetterOf = prompt('Введыть першу букву')
+        // let newNameCount = nameCount.map(firstLetter)
+        // document.write(newNameCount)
+
+        //=======================================================
+        //  Задача 5. Дано ваги автомобілів на парковці. З’ясувати, чи усі автомобілі є легковими (легшими за 2000 кг).
+
+        // let careWeight=[1500,2000.1700,1850]
+        // function cars(x) {
+        //     return x<2000
+        // }
+        // if(careWeight.every(cars))
+        // document.write('Всі машини легкові')
+        // else
+        // document.write('Не всі машини легкові')
+        //========================================================
+        // Задача 6. Дано масив, який зберігає кількість відвідувачів протягом тижня. 
+        // З’ясувати, чи були дні, коли кількість відвідувачів була меншою за 10.
+
+        // let visitorsCount = [15, 10, 20, 30, 40]
+        //     if(visitorsCount.some((x)=>x<10))
+        //     document.write('Були дні коли було менше 10')
+        //     else
+        //     document.write('Не було днів коли було менше 10')
+        //=====================================================================
+        // Задача 7. Розробити функцію, яка би для довільної кількості переданих символів визначала, кількість букв «а».
+
+        // function newArr(lenght) {
+        //     let arr=[]
+        //     for (let i = 0; i < symbolCount; i++) {
+        //         let el = prompt('Введіть символи')
+        //         arr.push(el)
+        //     }
+        //     return arr
+        // }
+        // function findA(symbol) {
+        //     let aCount = 0
+        //     for (let i = 0; i < symbol.length; i++) {
+        //         if(symbol[i]=='a')
+        //         aCount++
+        //     }
+        //     return aCount
+        // }
+        
+        // let symbolCount = parseInt(prompt('Введіть кількість символів'))
+        // symbol = newArr(symbolCount)
+        // let aCount = findA(symbol)
+        // document.write(`Всього було ${aCount} символа *а*`)
+        //=======================================================================
+        // Задача 8. Розробити функцію, яка би для довільної кількості чисел знаходила добуток чисел.
+
+        // let arr =[1,2,3,4,5,6]
+        // function dobutok(result,x,i,arr) {
+        //     result*=x
+        //     return result
+        // }
+        // document.write(arr.reduce(dobutok))
+        //======================================================================
+        // Задача 9. Розробити функцію, яка би для довільної кількості чисел знаходила максимальне
+        let arr =[1,2,3,4,5,6]
+        function max(result,x,i,arr){
+            return Math.max(...arr)
+        }
+        document.write(arr.reduce(max))
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
