@@ -9,7 +9,7 @@
     <script>
         // 1.	Задача. Відсортувати масив імен за останньою літерою.
 
-        //    let nameCount = ['Ivan','Sasha','Petro','Oleksandr']
+        //    let nameCount = ['Ivan','Sasha','Petro','Oleksandr']    Ретельніше підходьте до формування імен змінних (згідно з назвою nameCount робимо висновок, що це кількість імен, а насправді - це масив імен)
         //    nameCount.sort((a,b)=>a.charCodeAt(a.length-1)-b.charCodeAt(b.length-1))
         //    document.write(nameCount)
 
@@ -19,7 +19,7 @@
         // 20% (помножити на 0.8), а для усіх інших товарів – надати 5 % знижки (помножити на 0.95).
 
         let priceCount = [1200,300,400,1500,1010,500]
-        document.write(priceCount.forEach((x,i,arr)=>arr[i]=x>1000?x*0.8:x*0.95))
+        document.write(priceCount.forEach((x,i,arr)=>arr[i]=x>1000?x*0.8:x*0.95)) Ок. Але що буде, якщо ціна буде 1000?
 
         //==============================================================
 
@@ -51,7 +51,7 @@
         //     result+=x
         //     return result
         // }
-        // document.write(price.reduce(suma))
+        // document.write(price.reduce(suma)) Спробуйте зробити з стрілковими функціями
 
         //===============================================================
 
