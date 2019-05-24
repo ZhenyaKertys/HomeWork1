@@ -10,22 +10,14 @@
         // Задача 1. Дано масив цілих чисел. Кожне від’ємне число замінити на 0
 
         // let arr = [-1,2,-3,4,-5]
-        // function changeToZero(x,i,arr) {
-        //     if(x<0)
-        //     arr[i]=0
-        // }
-        // arr.forEach(changeToZero)
+        // arr.forEach((x,i,arr)=>x<0?arr[i]=0:arr[i])
         // document.write(arr)
         //-===================================================
         // Задача 2. Дано масив цін. Сформувати новий масив, який містить тільки ті ціни, які менші за задану.?????????
 
         // let priceCount = [50, 100, 65, 55, 79, 45]
-        // function lessThen(x, i, arr) {
-        //     if (x < givenPrice)
-        //         return x
-        // }
         // let givenPrice = parseInt(prompt('Введіть ціну'))
-        // let newPrice = priceCount.map(lessThen)
+        // let newPrice = priceCount.filter(x => x < givenPrice)
         // document.write(newPrice)
         //==============================================================
         // Задача 3. Дано масив цін товарів. Для цін, які менші за 1000грн. додати 20% ціни, для тих, які більші за 1000 грн. відняти 30%.
@@ -43,12 +35,8 @@
         // Задача 4. Дано масив імен. Сформувати новий масив, який складається з імен, які починаються на задану літеру.
 
         // let nameCount = ['Іван', 'Інна', 'Петя', 'Саша']
-        // function firstLetter(x,i,arr) {
-        //     if(firstLetterOf==x.charAt(0).toLowerCase())
-        //     return arr[i]
-        // }
-        // let firstLetterOf = prompt('Введыть першу букву')
-        // let newNameCount = nameCount.map(firstLetter)
+        // let firstLetterOf = prompt('Введіть першу букву')
+        // let newNameCount = nameCount.filter((x,i,arr)=>firstLetterOf==x.charAt(0).toLowerCase())
         // document.write(newNameCount)
 
         //=======================================================
@@ -90,7 +78,7 @@
         //     }
         //     return aCount
         // }
-        
+
         // let symbolCount = parseInt(prompt('Введіть кількість символів'))
         // symbol = newArr(symbolCount)
         // let aCount = findA(symbol)
@@ -98,19 +86,17 @@
         //=======================================================================
         // Задача 8. Розробити функцію, яка би для довільної кількості чисел знаходила добуток чисел.
 
-        // let arr =[1,2,3,4,5,6]
-        // function dobutok(result,x,i,arr) {
-        //     result*=x
-        //     return result
-        // }
-        // document.write(arr.reduce(dobutok))
+        // // let arr =[1,2,3,4,5,6]
+        // document.write(arr.reduce((result,x)=>result*x))
         //======================================================================
         // Задача 9. Розробити функцію, яка би для довільної кількості чисел знаходила максимальне
-        // let arr =[1,2,3,4,5,6]
-        // function max(result,x,i,arr){
-        //     return Math.max(...arr)
-        // }
-        // document.write(arr.reduce(max))
+
+        // let arr=[1,2,3,20,5,6]
+        // document.write(arr.reduce((result,x)=>result<x?x:result))
+
+        
+
+        
 
 
     </script>

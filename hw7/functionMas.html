@@ -27,13 +27,15 @@
         // document.write(arrUp)
         //============================================
         // Задача. Дано масив показників термометра протягом місяця. З’ясувати, чи є серед них дні, коли температура була меншою за 5 градусів.
+       
         // let degreec = [20,4,15,3,10]
-        // if(degreec.some((el)=>el=>5))    //Тут полилка
+        // if(degreec.some(el=>el>=5))   
         // document.write('Є дні з температурою нижче 5')
         // else
         // document.write('Немає днів з температурою нижче 5')
         //===========================================
         // Задача. Дано масив показників термометра протягом місяця. З’ясувати, чи усі показники є більшими за 10 градусів.
+       
         // let degreec = [12,5,15,9,20]
         // function bigerThen10(el) {
         //     return el>10
@@ -70,10 +72,9 @@
         // let choice = parseInt(prompt(`1.Добуток\n2.Сума`))
         // let result
         // switch(choice){
-        //     case 1 : result=arr.reduce((result,el,i,arr)=>result*=el) Тут можна було просто повертати добуток (не треба змінювати змінну result)
-                                                                        result=arr.reduce((result,el,i,arr)=>result*el)
+        //     case 1 : result=arr.reduce((result,el,i,arr)=>result*el)
         //     break;
-        //     case 2 : result=arr.reduce((result,el,i,arr)=>result+=el)
+        //     case 2 : result=arr.reduce((result,el,i,arr)=>result+el)
         //     break;
         //     default: result = 'ERROR'
         // }
@@ -86,6 +87,7 @@
         // Якщо елемент менше рівне за заданий то:
         // 1) помножити на 3;
         // 2) помножити на 5.
+
         // let arr = [2, 15, 6, 10]
         // function bigerOrLess(x, i, arr) {
         //     let el = parseInt(prompt(`Введіть число елемента для порівняння `))
@@ -116,20 +118,21 @@
         // 2) помножити на 7;
         // 3) поділити на 10.
         // Використати функції.
-        let arr = [10,20,30,40,50]
-        function choiceWhatToDo(x,i,arr) {        Крще було окремі операції описувати у окремих функціях
-        switch(choice){
-            case 1 : arr[i]=x*x
-            break;
-            case 2 : arr[i]*=7
-            break;
-            case 3 : arr[i]/=10
-            break;
-        }
-        }
-        let choice  =parseInt(prompt(`Виберіть дію\n1.Піднести до квадрату\n2.Помножити на 7\n3.Подлілити на 10`))
-        arr.forEach(choiceWhatToDo)
-        document.write(arr)
+
+        // let arr = [10,20,30,40,50]
+        // function choiceWhatToDo(x,i,arr) { 
+        // switch(choice){
+        //     case 1 : arr[i]=x*x
+        //     break;
+        //     case 2 : arr[i]*=7
+        //     break;
+        //     case 3 : arr[i]/=10
+        //     break;
+        // }
+        // }
+        // let choice  =parseInt(prompt(`Виберіть дію\n1.Піднести до квадрату\n2.Помножити на 7\n3.Подлілити на 10`))
+        // arr.forEach(choiceWhatToDo)
+        // document.write(arr)
 
 
 
