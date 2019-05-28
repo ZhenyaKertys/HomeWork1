@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 1. Верхній лівий угол
+        // let arr = [
+        //     [1, 2, 2, 3],
+        //     [1, 4, 1, 5]]
+        // function getSum(arr) {
+        //     let sum = 0
+        //     let middleOfRow = arr.length / 2
+        //     for (let i = 0; i < middleOfRow; i++) {
+        //         let middleOfCol = arr[i].length / 2
+        //         for (let j = 0; j < middleOfCol; j++) {
+        //             sum += arr[i][j]
+        //         }
+        //     }
+        //     return sum
+        // }
+        // document.write(getSum(arr))
+
+        //=====================================
+        //2.Вверхній правий угол
+        // let arr = [
+        //         [1, 2, 2, 3],
+        //         [1, 4, 1, 5]]
+        //     function getSum(arr) {
+        //         let sum = 0
+        //         let middleOfRow = arr.length / 2
+        //         for (let i = 0; i < middleOfRow; i++) {
+        //             let middleOfCol = arr[i].length / 2
+        //             for (let j = middleOfCol; j < arr[i].length; j++) {
+        //                 sum += arr[i][j]
+        //             }
+        //         }
+        //         return sum
+        //     }
+        //     document.write(getSum(arr))
+
+        //3.Нижній лівий угол
+
+        // let arr = [
+        //     [1, 2, 2, 3],
+        //     [1, 4, 1, 5]]
+        // function getSum(arr) {
+        //     let sum = 0
+        //     let middleOfRow = arr.length / 2
+        //     for (let i = middleOfRow; i < arr.length; i++) {
+        //         let middleOfCol = arr[i].length / 2
+        //         for (let j = 0; j < middleOfCol; j++) {
+        //             sum += arr[i][j]
+        //         }
+        //     }
+        //     return sum
+        // }
+        // document.write(getSum(arr))
+
+        //4.Нижній правий угол
+
+        // let arr = [
+        //     [1, 2, 2, 3],
+        //     [1, 4, 1, 5]]
+        // function getSum(arr) {
+        //     let sum = 0
+        //     let middleOfRow = arr.length / 2
+        //     for (let i = middleOfRow; i < arr.length; i++) {
+        //         let middleOfCol = arr[i].length / 2
+        //         for (let j = middleOfCol; j < arr[i].length; j++) {
+        //             sum += arr[i][j]
+        //         }
+        //     }
+        //     return sum
+        // }
+        // document.write(getSum(arr))
+
+
+        // Задача 2. Дано інформацію про прибуток К магазинів протягом тижня.Знайти :
+        // 1) загальний прибуток кожного магазину за тиждень;
+        // 2) загальний прибуток усіх магазинів кожного дня(загальний прибуток усіх магазинів за понеділок, за вівторок, і т.д.);
+
+        // let shopsProfit = [
+        //     [100, 123, 230],
+        //     [123, 321, 129],
+        //     [234, 222, 333],
+        //     [123, 332, 434],
+        //     [123, 134, 432],
+        //     [150, 240, 340],
+        //     [156, 120, 290]
+        // ]
+        // function getSumShop1(arr) {
+        // let sum = 0
+        // for (let i = 0; i < arr.lenght; i++) {
+        //     for (let j = 0; j <= arr[i].lenght/2; j++) {
+        //         sum+=arr[i][j]
+        //     }  
+        //     return sum
+        // }
+        // }
+        // document.write(getSumShop1(shopsProfit))
+
+
+
+        let shopsProfit = [
+            [100, 123, 230],
+            [123, 321, 129],
+            [234, 222, 333],
+            [123, 332, 434],
+            [123, 134, 432],
+            [150, 240, 340],
+            [156, 120, 290]
+        ]
+        function getSumShop1(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.lenght; i++) {
+            for (let j = 0; j <=arr[i].lenght; j++) {
+                sum += arr[i][j]
+            }  
+        }
+        return sum;
+        }
+        document.write(getSumShop1(shopsProfit))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
