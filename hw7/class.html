@@ -36,11 +36,21 @@
                 let br = document.createElement('br')
                 mainDiv.appendChild(br)
 
+                // const secondLabel = document.createElement('label')
+                // secondLabel.innerText = 'Друге число: '
+                // this.secondNumber = document.createElement('span')
+                // const randomSecondNum = Math.floor(Math.random() * 10)
+                // this.secondNumber.innerText=randomSecondNum
+                // secondLabel.appendChild(this.secondNumber)
+                // mainDiv.appendChild(secondLabel)
+                // br = document.createElement('br')
+                // mainDiv.appendChild(br)
+
                 const secondLabel = document.createElement('label')
                 secondLabel.innerText = 'Друге число: '
-                this.secondNumber = document.createElement('span')
+                this.secondNumber = document.createElement('input')
                 const randomSecondNum = Math.floor(Math.random() * 10)
-                this.secondNumber.innerText=randomSecondNum
+                this.secondNumber.value=randomSecondNum
                 secondLabel.appendChild(this.secondNumber)
                 mainDiv.appendChild(secondLabel)
                 br = document.createElement('br')
