@@ -93,16 +93,37 @@
         //     [156, 120, 290]
         // ]
         // function getSumShop1(arr) {
-        // let sum = 0
-        // for (let i = 0; i < arr.lenght; i++) {
-        //     for (let j = 0; j <= arr[i].lenght/2; j++) {
-        //         sum+=arr[i][j]
-        //     }  
+        //     let sum = 0
+        //     for (let i = 0; i < arr.length; i++) {  
+        //         for (let j = 0; j <= arr[i].length/2; j++) {
+        //             sum += arr[i][j]
+        //         }
+        //     }
         //     return sum
         // }
-        // }
         // document.write(getSumShop1(shopsProfit))
-
+        // function getSumShop2(arr) {
+        //     let sum = 0
+        //     for (let i = 0; i < arr.length; i++) {
+        //         for (let j = 1; j < arr[i].length-1; j++) {
+        //             sum += arr[i][j]
+        //         }
+        //     }
+        //     return sum
+        // }
+        // document.write(getSumShop2(shopsProfit))
+        // function getSumShop3(arr) {
+        //     let sum = 0
+        //     for (let i = 0; i < arr.length; i++) {
+                
+        //         for (let j = 1; j <= arr[i].length; j++) {
+        //             sum += arr[i][j]
+        //         }
+        //         i++
+        //     }
+        //     return sum
+        // }
+        // document.write(getSumShop3(shopsProfit))
 
 
         let shopsProfit = [
@@ -114,16 +135,20 @@
             [150, 240, 340],
             [156, 120, 290]
         ]
-        function getSumShop1(arr) {
-        let sum = 0;
-        for (let i = 0; i < arr.lenght; i++) {
-            for (let j = 0; j <=arr[i].lenght; j++) {
-                sum += arr[i][j]
-            }  
+        function getSumShop1(arr, shopNum) { //Прибуток магазину з номером shopNum
+
+            let sum = 0
+                for (let j = 0; j <= arr[i].length; j++) {
+                    sum += arr[shopNum][j]
+                }
+            
+            return sum
         }
-        return sum;
-        }
-        document.write(getSumShop1(shopsProfit))
+
+
+        for (let i = 0; i <= shopsProfit.length; i++) {
+        document.write('Shop '+i+' - '+ getSumShop1(shopsProfit, i))
+}  
     </script>
 </head>
 

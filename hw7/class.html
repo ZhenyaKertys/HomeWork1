@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        class MultChecker {
+            constructor() {
+                this.rightAnswer = 0
+                this.wrongAnswer = 0
+            }
+            onClick() {
+                const firstNum = parseInt(this.firstNumber.value)
+                const secondNum = parseInt(this.secondNumber.value)
+                const userNum = parseInt(this.userAnswer.value)
+                if(firstNum*secondNum==userNum)
+                this.rightAnswer++
+                else
+                this.wrongAnswer++
+                this.rightAnswerNum.innerText=this.rightAnswer
+                this.wrongAnswerNum.innerText=this.wrongAnswer
+                this.rightAnsweComp.innerText=`${firstNum} * ${secondNum} = ${firstNum*secondNum}`
+            }
+
+            render() {
+                const mainDiv = document.createElement('div')
+
+                const firstLabel = document.createElement('label')
+                firstLabel.innerText = 'Введіть перше число: '
+                this.firstNumber = document.createElement('input')
+                firstLabel.appendChild(this.firstNumber)
+                mainDiv.appendChild(firstLabel)
+                let br = document.createElement('br')
+                mainDiv.appendChild(br)
+
+                const secondLabel = document.createElement('label')
+                secondLabel.innerText = 'Друге число: '
+                this.secondNumber = document.createElement('span')
+                const randomSecondNum = Math.floor(Math.random() * 10)
+                this.secondNumber.innerText=randomSecondNum
+                secondLabel.appendChild(this.secondNumber)
+                mainDiv.appendChild(secondLabel)
+                br = document.createElement('br')
+                mainDiv.appendChild(br)
+
+                const userAnswerLabel = document.createElement('label')
+                userAnswerLabel.innerText = 'Відповідь :'
+                this.userAnswer = document.createElement('input')
+                userAnswerLabel.appendChild(this.userAnswer)
+                mainDiv.appendChild(userAnswerLabel)
+                br = document.createElement('br')
+                mainDiv.appendChild(br)
+
+                const button = document.createElement('button')
+                button.innerText = 'Перевірити :'
+                button.onclick = this.onClick.bind(this)
+                mainDiv.appendChild(button)
+                br = document.createElement('br')
+                mainDiv.appendChild(br)
+
+                const divRight = document.createElement('div')
+                divRight.innerText = 'Правельних відповідей :'
+                this.rightAnswerNum = document.createElement('span')
+                divRight.appendChild(this.rightAnswerNum)
+                mainDiv.appendChild(divRight)
+                br = document.createElement('br')
+                mainDiv.appendChild(br)
+
+                const divWrong = document.createElement('div')
+                divWrong.innerText = 'Неправельних відповідей :'
+                this.wrongAnswerNum = document.createElement('span')
+                divWrong.appendChild(this.wrongAnswerNum)
+                mainDiv.appendChild(divWrong)
+                br = document.createElement('br')
+                mainDiv.appendChild(br)
+
+                const divRigthMult = document.createElement('div')
+                divRigthMult.innerText='Зразок правельного рішення'
+                this.rightAnsweComp = document.createElement('span')
+                divRigthMult.appendChild(this.rightAnsweComp)
+                mainDiv.appendChild(divRigthMult)
+
+                return mainDiv
+            }
+
+
+
+        }
+        window.onload = function () {
+            const multChecker = new MultChecker()
+            document.getElementById('container').appendChild(multChecker.render())
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+
+    </div>
+</body>
+
+</html>
