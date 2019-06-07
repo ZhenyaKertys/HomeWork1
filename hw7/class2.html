@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        
+     // Задача 1. Створити клас, що представляє прямокутник і має методи для знаходження площі, периметру та масштабування.
+    class Rectangle{
+
+        constructor(){
+            this.areaRect = 0
+            this.perimetrRect = 0
+            this.scaleRect = 0
+        }
+
+        area(){
+            const sideA = parseInt(this.sideA.value)
+            const sideB = parseInt(this.sideB.value)
+            this.areaRect = sideA*sideB
+            this.areaAns.innerText=`${this.areaRect} см`
+        }
+
+        perimeter(){
+            const sideA = parseInt(this.sideA.value)
+            const sideB = parseInt(this.sideB.value)
+            this.perimetrRect = (sideA+sideB)*2
+            this.perimetrAns.innerText=`${this.perimetrRect} см`
+        }
+
+        scale(){
+            
+        }
+
+        render(){
+            const mainDiv = document.createElement('div')
+
+            const rectDiv = document.createElement('div')
+
+            rectDiv.innerText='Введіть розмір сторін прямокутника'
+            let br = document.createElement('br')
+            rectDiv.appendChild(br)
+            const labelA = document.createElement('label')
+            labelA.innerText='Сторона А:'
+            this.sideA = document.createElement('input')
+            this.sideA.type='number'
+            labelA.appendChild(this.sideA)
+            rectDiv.appendChild(labelA)
+            br = document.createElement('br')
+            rectDiv.appendChild(br)
+
+            const labelB = document.createElement('label')
+            labelB.innerText='Сторона В:'
+            this.sideB = document.createElement('input')
+            this.sideB.type='number'
+            labelB.appendChild(this.sideB)
+            rectDiv.appendChild(labelB)
+            mainDiv.appendChild(rectDiv)
+
+            const divArea = document.createElement('div')
+            const btnArea = document.createElement('button')
+            btnArea.innerText='Площа'
+            btnArea.onclick = this.area.bind(this)
+            divArea.appendChild(btnArea)
+            this.areaAns = document.createElement('span')
+            divArea.appendChild(this.areaAns)
+            mainDiv.appendChild(divArea)
+            
+
+            const divPerimetr = document.createElement('div')
+            const btnPerimetr = document.createElement('button')
+            btnPerimetr.innerText='Периметр'
+            btnPerimetr.onclick = this.perimeter.bind(this)
+            divPerimetr.appendChild(btnPerimetr)
+            this.perimetrAns = document.createElement('span')
+            divPerimetr.appendChild(this.perimetrAns)
+            mainDiv.appendChild(divPerimetr)
+            
+
+            const divScale = document.createElement('div')
+            const btnScale = document.createElement('button')
+            btnScale.innerText='Масштабувати на:'
+            btnScale.onclick = this.scale.bind(this)
+            divScale.appendChild(btnScale)
+            this.scaleAns = document.createElement('input')
+            divScale.appendChild(this.scaleAns)
+            mainDiv.appendChild(divScale)
+            
+
+            return mainDiv
+        }
+    }
+    window.onload = function () {
+        const rect = new Rectangle()
+        document.getElementById('container').appendChild(rect.render())
+    }
+    </script>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+</body>
+</html>
