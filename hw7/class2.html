@@ -31,7 +31,14 @@
         }
 
         scale(){
-            
+            const sideA = parseInt(this.sideA.value)
+            const sideB = parseInt(this.sideB.value)
+            const scaleUp = parseInt(this.scaleAns.value)
+
+            const sideAUp = sideA*scaleUp
+            const sideBUp = sideB*scaleUp
+            this.scaleSpan.innerText=`Масштвбовані A = ${sideAUp} см  B = ${sideBUp} см`
+
         }
 
         render(){
@@ -86,6 +93,11 @@
             divScale.appendChild(btnScale)
             this.scaleAns = document.createElement('input')
             divScale.appendChild(this.scaleAns)
+            br = document.createElement('br')
+            divScale.appendChild(br)
+            this.scaleSpan = document.createElement('span')
+            divScale.appendChild(this.scaleSpan)
+           
             mainDiv.appendChild(divScale)
             
 
